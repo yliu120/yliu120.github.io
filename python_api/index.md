@@ -1,12 +1,12 @@
 # Useful But Easy to Forget Python APIs
 
 ## Table of Contents
-1. [List](#List)
-2. [String](#String)
-3. [Set](#Set)
-4. [Dictionary](#Dictionary)
-5. [Deque](#Deque)
-6. [Heap](#Heap)
+1. [List](#list)
+2. [String](#string)
+3. [Set](#set)
+4. [Dictionary](#dictionary)
+5. [Deque](#deque)
+6. [Heap](#heap)
 
 ## List
 
@@ -35,7 +35,14 @@ the first element in ascending order, `a.sort(key=lambda x: x[0], reverse=True)`
 # string is iterable.
 a = "Test String"
 ```
-
+1. formatting. `'To format {} string {}'.format(3, 'correctly')`.
+2. Is prefixed or suffixed with? `a.startswith('Test')`/`a.endswith('ing')`.
+3. What type is this string? `a.islower()`/`a.isupper()`/`a.isdecimal()`/`a.isalnum()`/`a.isnumeric()`/...
+4. Convert between upper and lower cases. `a.upper()`/`a.lower()`.
+5. Split and Join. `a.split()` (by space), `a.split('t')` (by a character), `','.join(['a', 'b', 'c'])`
+6. Concatenate. `a + a`
+7. Find/Replace. `a.find('est')`/`a.replace('est', 'new_est')`.
+8. String slices (substrings), same with list. `a[5:]` (this will evaluate to `'String'`).
 
 ## Set
 
