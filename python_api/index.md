@@ -7,6 +7,8 @@
 4. [Dictionary](#dictionary)
 5. [Deque](#deque)
 6. [Heap](#heap)
+7. [Synchronized Queue](#synchronized-queue)
+8. [General Collections](#general-collections)
 
 ## List
 
@@ -97,3 +99,63 @@ a = []
 4. Peek the smallest item from heap, `smallest = a[0]`.
 5. If the items are tuples, the heapq uses the first element in a tuple as key.
 6. Max heap: enqueue negative values as key.
+
+## Synchronized Queue
+
+Please note that the queue has an embedded lock mechanism to provide thread-safe read/write.
+
+```Python
+from queue import Queue, LifoQueue, PriorityQueue
+
+q = Queue(maxsize=0)
+lifo_q = LifoQueue(maxsize=0)  # Stack
+p_q = PriorityQueue(maxsize=0)
+
+q.empty()  # Is the queue empty?
+q.full()   # Is the queue full?
+p_q.put((10, item))          # Thread-safe enqueue. For priority queue, 10 is the priority num.
+p_q.put_nowait((10, item))   # Thread-unsafe enqueue.
+front_most = q.get()         # Thread-safe dequeue
+front_most = q.get_nowait()  # Thread-unsafe dequeue.
+
+a = []
+```
+
+## General Collections
+
+1. Counter (like a wrapper of a dictionary)
+
+```Python
+>>> c = Counter('count the occurrence of all letters.')
+>>> c.most_common(3)
+[('r', 3), ... ]
+>>> c = Counter({'red': 4, 'blue': 2})
+>>> sum(c.values())   # total of all counts
+>>> for k, cnt_k in c.items():
+...     pass
+```
+
+2. defaultdict (Wrapper of a regular Python dictionary)
+
+Take a constructor of the value type in its constructor, for example,
+
+```Python
+>>> d = defaultdict(list)
+>>> for k, v in s:
+...     d[k].append(v)
+```
+
+3. OrderedDict
+
+Ordered dictionary.
+
+```Python
+>>> d = OrderedDict.fromkeys('abcde')
+>>> d.move_to_end('b')
+>>> ''.join(d.keys())
+'acdeb'
+>>> d.move_to_end('b', last=False)
+>>> ''.join(d.keys())
+'bacde'
+>>> last_key, value = d.popitem()  # pop the last item
+```
