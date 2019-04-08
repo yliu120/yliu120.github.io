@@ -137,7 +137,7 @@ a = []
 
 2. defaultdict (Wrapper of a regular Python dictionary)
 
-Take a constructor of the value type in its constructor, for example,
+  Take a constructor of the value type in its constructor, for example,
 
   ```Python
   >>> d = defaultdict(list)
@@ -147,7 +147,7 @@ Take a constructor of the value type in its constructor, for example,
 
 3. OrderedDict
 
-Ordered dictionary.
+  Ordered dictionary.
 
   ```Python
   >>> d = OrderedDict.fromkeys('abcde')
