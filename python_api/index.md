@@ -1,5 +1,13 @@
 # Useful But Easy to Forget Python APIs
 
+## Table of Contents
+1. [List](#List)
+2. [String](#String)
+3. [Set](#Set)
+4. [Dictionary](#Dictionary)
+5. [Deque](#Deque)
+6. [Heap](#Heap)
+
 ## List
 
 Let's define `a = []` as a list.
@@ -20,6 +28,14 @@ the first element in ascending order, `a.sort(key=lambda x: x[0], reverse=True)`
 11. Is a list is empty: `not a`.
 12. Iterate all elements paired with their indices, use `enumerate(a)`.
 13. Zip k lists: `zip(a, b, c...)`, where a, b, c are lists.
+
+## String
+
+```Python
+# string is iterable.
+a = "Test String"
+```
+
 
 ## Set
 
