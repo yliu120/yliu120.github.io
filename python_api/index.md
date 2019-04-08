@@ -1,5 +1,3 @@
-# Useful But Easy to Forget Python APIs
-
 ## Table of Contents
 1. [List](#list)
 2. [String](#string)
