@@ -137,25 +137,25 @@ a = []
 
 2. defaultdict (Wrapper of a regular Python dictionary)
 
-  Take a constructor of the value type in its constructor, for example,
+    Take a constructor of the value type in its constructor, for example,
 
-  ```Python
-  >>> d = defaultdict(list)
-  >>> for k, v in s:
-  ...     d[k].append(v)
-  ```
+        ```Python
+        >>> d = defaultdict(list)
+        >>> for k, v in s:
+        ...     d[k].append(v)
+        ```
 
 3. OrderedDict
 
-  Ordered dictionary.
+    Ordered dictionary.
 
-  ```Python
-  >>> d = OrderedDict.fromkeys('abcde')
-  >>> d.move_to_end('b')
-  >>> ''.join(d.keys())
-  'acdeb'
-  >>> d.move_to_end('b', last=False)
-  >>> ''.join(d.keys())
-  'bacde'
-  >>> last_key, value = d.popitem()  # pop the last item
-  ```
+        ```Python
+        >>> d = OrderedDict.fromkeys('abcde')
+        >>> d.move_to_end('b')
+        >>> ''.join(d.keys())
+        'acdeb'
+        >>> d.move_to_end('b', last=False)
+        >>> ''.join(d.keys())
+        'bacde'
+        >>> last_key, value = d.popitem()  # pop the last item
+        ```
