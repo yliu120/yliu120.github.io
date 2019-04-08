@@ -125,15 +125,15 @@ a = []
 
 1. Counter (like a wrapper of a dictionary)
 
-  ```Python
-  >>> c = Counter('count the occurrence of all letters.')
-  >>> c.most_common(3)
-  [('r', 3), ... ]
-  >>> c = Counter({'red': 4, 'blue': 2})
-  >>> sum(c.values())   # total of all counts
-  >>> for k, cnt_k in c.items():
-  ...     pass
-  ```
+        ```Python
+        >>> c = Counter('count the occurrence of all letters.')
+        >>> c.most_common(3)
+        [('r', 3), ... ]
+        >>> c = Counter({'red': 4, 'blue': 2})
+        >>> sum(c.values())   # total of all counts
+        >>> for k, cnt_k in c.items():
+        ...     pass
+        ```
 
 2. defaultdict (Wrapper of a regular Python dictionary)
 
