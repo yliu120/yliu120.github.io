@@ -43,7 +43,34 @@ Let's define `a = {}` as a Dictionary.
 3. Add/Mutate a value of a key. `a[key] = val`.
 4. Remove a key in a dict. `del a[key]`
 5. (Python3) Returns an iterator of all kv pairs: `a.items()`. This is useful for looping, i.e., `for k, v in a.items(): pass`.
+6. Get all keys/values of a dict, `a.keys()`/`a.values()`.
 
 ## Deque
 
+```Python
+from collections import deque
+
+a = deque([1, 2, 3])
+```
+
+1. Append to the right side (Enqueuing), `a.append(2)`.
+2. Append to the left side, `a.appendleft(2)`.
+3. Extend to the right/left side, `a.extend([1, 2, 3])`/`a.extendleft([1, 2, 3])`.
+4. Pop from right side, `right_most_element = a.pop()`.
+5. Pop from left side, `left_most_element = a.popleft()`.
+6. `a.copy()`, `a.clear()`, `a.reverse()` have all same semantics as `list` objects.
+
 ## Heap
+
+```Python
+import heapq
+
+a = []
+```
+
+1. Heapify a list (transform a list into a heap **in place**, linear time), `heaqp.heapify(a)`. This function returns None.
+2. Push a value onto heap, `heapq.heappush(a, 1)`.
+3. Pop and return the smallest item from heap, `smallest = heapq.heappop(a)`
+4. Peek the smallest item from heap, `smallest = a[0]`.
+5. If the items are tuples, the heapq uses the first element in a tuple as key.
+6. Max heap: enqueue negative values as key.
