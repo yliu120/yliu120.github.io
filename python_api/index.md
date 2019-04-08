@@ -125,37 +125,37 @@ a = []
 
 1. Counter (like a wrapper of a dictionary)
 
-```Python
->>> c = Counter('count the occurrence of all letters.')
->>> c.most_common(3)
-[('r', 3), ... ]
->>> c = Counter({'red': 4, 'blue': 2})
->>> sum(c.values())   # total of all counts
->>> for k, cnt_k in c.items():
-...     pass
-```
+  ```Python
+  >>> c = Counter('count the occurrence of all letters.')
+  >>> c.most_common(3)
+  [('r', 3), ... ]
+  >>> c = Counter({'red': 4, 'blue': 2})
+  >>> sum(c.values())   # total of all counts
+  >>> for k, cnt_k in c.items():
+  ...     pass
+  ```
 
 2. defaultdict (Wrapper of a regular Python dictionary)
 
 Take a constructor of the value type in its constructor, for example,
 
-```Python
->>> d = defaultdict(list)
->>> for k, v in s:
-...     d[k].append(v)
-```
+  ```Python
+  >>> d = defaultdict(list)
+  >>> for k, v in s:
+  ...     d[k].append(v)
+  ```
 
 3. OrderedDict
 
 Ordered dictionary.
 
-```Python
->>> d = OrderedDict.fromkeys('abcde')
->>> d.move_to_end('b')
->>> ''.join(d.keys())
-'acdeb'
->>> d.move_to_end('b', last=False)
->>> ''.join(d.keys())
-'bacde'
->>> last_key, value = d.popitem()  # pop the last item
-```
+  ```Python
+  >>> d = OrderedDict.fromkeys('abcde')
+  >>> d.move_to_end('b')
+  >>> ''.join(d.keys())
+  'acdeb'
+  >>> d.move_to_end('b', last=False)
+  >>> ''.join(d.keys())
+  'bacde'
+  >>> last_key, value = d.popitem()  # pop the last item
+  ```
