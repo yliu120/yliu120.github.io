@@ -101,6 +101,8 @@ Heaps are binary trees for which every parent node has a value less than or equa
     ```Python
     counts = collections.Counter(nums)
     return heapq.nlargest(k, counts.keys(), key=counts.get)
+    
+    heapq.nsmallest(K, points, lambda (x, y): x * x + y * y)
     ```
 6. If the items are tuples, the heapq uses the first element in a tuple as key.
 7. Max heap: enqueue negative values as key.
@@ -164,3 +166,9 @@ a = []
         'bacde'
         >>> last_key, value = d.popitem()  # pop the last item
         ```
+
+## Tricks
+1. lambda
+`dist = lambda i: points[i][0]**2 + points[i][1]**2`   `dist(i)` represent dist of point[i] to (0, 0)
+2. random
+`random.randint(1, n)`
