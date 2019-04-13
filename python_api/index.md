@@ -90,13 +90,20 @@ import heapq
 
 a = []
 ```
+Heaps are binary trees for which every parent node has a value less than or equal to any of its children. This implementation uses arrays for which heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k, counting elements from zero. Its smallest element is always the root, heap[0] (Min heap).
 
 1. Heapify a list (transform a list into a heap **in place**, linear time), `heaqp.heapify(a)`. This function returns None.
 2. Push a value onto heap, `heapq.heappush(a, 1)`.
 3. Pop and return the smallest item from heap, `smallest = heapq.heappop(a)`
 4. Peek the smallest item from heap, `smallest = a[0]`.
-5. If the items are tuples, the heapq uses the first element in a tuple as key.
-6. Max heap: enqueue negative values as key.
+5. `heapq.nlargest(n, iterable[, key])' Return a list with the n largest elements from the dataset defined by iterable.
+    Example: 
+    ```Python
+    counts = collections.Counter(nums)
+    return heapq.nlargest(k, counts.keys(), key=counts.get)
+    ```
+6. If the items are tuples, the heapq uses the first element in a tuple as key.
+7. Max heap: enqueue negative values as key.
 
 ## Synchronized Queue
 
