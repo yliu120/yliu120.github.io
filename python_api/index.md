@@ -136,6 +136,8 @@ a = []
         >>> c = Counter('count the occurrence of all letters.')
         >>> c.most_common(3)
         [('r', 3), ... ]
+        c.most_common(1)[0][0]
+        'r'
         >>> c = Counter({'red': 4, 'blue': 2})
         >>> sum(c.values())   # total of all counts
         >>> for k, cnt_k in c.items():
@@ -172,3 +174,6 @@ a = []
 `dist = lambda i: points[i][0]**2 + points[i][1]**2`   `dist(i)` represent dist of point[i] to (0, 0)
 2. random
 `random.randint(1, n)`
+3. other
+`s = cmp(x, 0)`
+`words = re.findall("\w+", paragraph.lower())`  find all the words in list with lowercase
