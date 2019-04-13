@@ -96,7 +96,7 @@ Heaps are binary trees for which every parent node has a value less than or equa
 2. Push a value onto heap, `heapq.heappush(a, 1)`.
 3. Pop and return the smallest item from heap, `smallest = heapq.heappop(a)`
 4. Peek the smallest item from heap, `smallest = a[0]`.
-5. `heapq.nlargest(n, iterable[, key])' Return a list with the n largest elements from the dataset defined by iterable.
+5. `heapq.nlargest(n, iterable[, key])` Return a list with the n largest elements from the dataset defined by iterable.
     Example: 
     ```Python
     counts = collections.Counter(nums)
