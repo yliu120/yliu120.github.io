@@ -52,7 +52,8 @@ Let's define `a = set()` as a Set.
 2. Tell whether an element in a Set by `3 in a`.
 3. Is a Set is empty? `not a`
 4. Append an elment to a Set, `b = a | {1}`, please note that `a | {1}` will not change `a`.
-5. Operations between two sets:
+5. `covered.update({a, b, c, d})` Add a, b, c,d into set.
+6. Operations between two sets:
   + elements in a but not in b (diff): `a - b`
   + elements in both a and b (AND): `a ^ b`
   + elements in a or b or both (UNION): `a | b`
