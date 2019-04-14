@@ -64,7 +64,7 @@ Let's define `a = {}` as a Dictionary.
 1. Is a Dictionary empty? Same as all above.
 2. Is a key in dict? `key in a`.
 3. Add/Mutate a value of a key. `a[key] = val`.
-4. Remove a key in a dict. `del a[key]`
+4. Remove a key in a dict. `del a[key]` or `a.pop(key)`
 5. (Python3) Returns an iterator of all kv pairs: `a.items()`. This is useful for looping, i.e., `for k, v in a.items(): pass`.
 6. Get all keys/values of a dict, `a.keys()`/`a.values()`.
 
@@ -92,7 +92,7 @@ a = []
 ```
 Heaps are binary trees for which every parent node has a value less than or equal to any of its children. This implementation uses arrays for which heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k, counting elements from zero. Its smallest element is always the root, heap[0] (Min heap).
 
-1. Heapify a list (transform a list into a heap **in place**, linear time), `heaqp.heapify(a)`. This function returns None.
+1. Heapify a list (transform a list into a heap **in place**, linear time), `heaqp.heapify(a)`. This function returns None. O(n)
 2. Push a value onto heap, `heapq.heappush(a, 1)`.
 3. Pop and return the smallest item from heap, `smallest = heapq.heappop(a)`
 4. Peek the smallest item from heap, `smallest = a[0]`.
@@ -136,7 +136,7 @@ a = []
         >>> c = Counter('count the occurrence of all letters.')
         >>> c.most_common(3)
         [('r', 3), ... ]
-        c.most_common(1)[0][0]
+        >>> c.most_common(1)[0][0]
         'r'
         >>> c = Counter({'red': 4, 'blue': 2})
         >>> sum(c.values())   # total of all counts
