@@ -176,8 +176,7 @@ a = []
 2. random
 `random.randint(1, n)`
 3.`bisect.bisect(a, x, lo=0, hi=len(a)` returns an insertion point which comes after (to the right of) any existing entries of x in a.  `bisect.bisect_left(a, x, lo=0, hi=len(a)`the insertion point will be before (to the left of) any existing entries 
-
-`bisect.insort(a, x, lo=0, hi=len(a)` inserting x in a after any existing entries of x. bisect.insort_left(a, x, lo=0, hi=len(a)` inserting x in a before any existing entries of x
+  `bisect.insort(a, x, lo=0, hi=len(a)` inserting x in a after any existing entries of x. bisect.insort_left(a, x, lo=0, hi=len(a)` inserting x in a before any existing entries of x
 4. other
 `s = cmp(x, 0)`
 `words = re.findall("\w+", paragraph.lower())`  find all the words in list with lowercase
