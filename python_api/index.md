@@ -175,7 +175,8 @@ a = []
 `dist = lambda i: points[i][0]**2 + points[i][1]**2`   `dist(i)` represent dist of point[i] to (0, 0)
 2. random
 `random.randint(1, n)`
-3.`bisect.bisect(a, x, lo=0, hi=len(a)` returns an insertion point which comes after (to the right of) any existing entries of x in a.  `bisect.bisect_left(a, x, lo=0, hi=len(a)`the insertion point will be before (to the left of) any existing entries\\
+3.`bisect.bisect(a, x, lo=0, hi=len(a)` returns an insertion point which comes after (to the right of) any existing entries of x in a.  `bisect.bisect_left(a, x, lo=0, hi=len(a)`the insertion point will be before (to the left of) any existing entries 
+
 `bisect.insort(a, x, lo=0, hi=len(a)` inserting x in a after any existing entries of x. bisect.insort_left(a, x, lo=0, hi=len(a)` inserting x in a before any existing entries of x
 4. other
 `s = cmp(x, 0)`
