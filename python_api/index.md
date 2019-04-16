@@ -7,6 +7,9 @@
 6. [Heap](#heap)
 7. [Synchronized Queue](#synchronized-queue)
 8. [General Collections](#general-collections)
+9. [Itertools] (#itertools)
+10. [Functools] (#functools)
+11. [Tricks] (#tricks)
 
 ## List
 
@@ -184,7 +187,15 @@ a = []
 + `itertools.combinations('ABCD', 2) # --> AB AC AD BC BD CD`
 + `itertools.permutations('ABCD', 2)` almost same as above but returns all permutations.
 + `itertools.product('ABCD', 'xy') # --> Ax Ay Bx By Cx Cy Dx Dy`
+
 ## functools
+
++ `reduce`
+  ```Python
+  functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) calculates ((((1+2)+3)+4)+5)
+  ```
+  Please note that map() is a builtin function. For example, `map(lambda x: x**2, [1, 2, 3]) # --> [1, 4, 9]`.
+
 
 ## Tricks
 1. lambda function:
