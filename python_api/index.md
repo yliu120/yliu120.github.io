@@ -169,6 +169,22 @@ a = []
         'bacde'
         >>> last_key, value = d.popitem()  # pop the last item
         ```
+        
+## itertools
+
++ `itertools.chain(iter1, iter2, iter3)`
+  ```Python
+  a = range(5)
+  b = range(3)
+  # Will print 0, 1, 2, 3, 4, 0, 1, 2
+  for i in itertools.chain(a, b):
+    print(i)
+  ```
+
++ `itertools.combinations('ABCD', 2) # --> AB AC AD BC BD CD`
++ `itertools.permutations('ABCD', 2)` almost same as above but returns all permutations.
++ `itertools.product('ABCD', 'xy') # --> Ax Ay Bx By Cx Cy Dx Dy`
+## functools
 
 ## Tricks
 1. lambda function:
