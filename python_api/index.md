@@ -7,9 +7,9 @@
 6. [Heap](#heap)
 7. [Synchronized Queue](#synchronized-queue)
 8. [General Collections](#general-collections)
-9. [Itertools] (#itertools)
-10. [Functools] (#functools)
-11. [Tricks] (#tricks)
+9. [Itertools](#itertools)
+10. [Functools](#functools)
+11. [Tricks](#tricks)
 
 ## List
 
@@ -136,17 +136,17 @@ a = []
 
 1. Counter (like a wrapper of a dictionary)
 
-        ```Python
-        >>> c = Counter('count the occurrence of all letters.')
-        >>> c.most_common(3)
-        [('r', 3), ... ]
-        >>> c.most_common(1)[0][0]
-        'r'
-        >>> c = Counter({'red': 4, 'blue': 2})
-        >>> sum(c.values())   # total of all counts
-        >>> for k, cnt_k in c.items():
-        ...     pass
-        ```
+   ```Python
+   >>> c = Counter('count the occurrence of all letters.')
+   >>> c.most_common(3)
+   [('r', 3), ... ]
+   >>> c.most_common(1)[0][0]
+   'r'
+   >>> c = Counter({'red': 4, 'blue': 2})
+   >>> sum(c.values())   # total of all counts
+   >>> for k, cnt_k in c.items():
+   ...     pass
+   ```
 
 2. defaultdict (Wrapper of a regular Python dictionary)
 
