@@ -211,3 +211,9 @@ a = []
 4. others
     +   `s = cmp(x, 0)`
     +   `words = re.findall("\w+", paragraph.lower())`  find all the words in list with lowercase
+    
+      `bisect.insort(a, x, lo=0, hi=len(a)` inserting x in a after any existing entries of x. `bisect.insort_left(a, x, lo=0, hi=len(a)` inserting x in a before any existing entries of x
+
+    +    `Trie = lambda: collections.defaultdict(Trie)`
+    +    `int(k, 16)` 
+    +    ` def __hash__(self): return hash(self.content)`
