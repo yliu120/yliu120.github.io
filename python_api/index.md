@@ -31,6 +31,7 @@ the first element in ascending order, `a.sort(key=lambda x: x[0], reverse=True)`
 11. Is a list is empty: `not a`.
 12. Iterate all elements paired with their indices, use `enumerate(a)`.
 13. Zip k lists: `zip(a, b, c...)`, where a, b, c are lists.
+14. `nums[:]` returns a copy of nums 
 
 ## String
 
