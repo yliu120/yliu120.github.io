@@ -203,7 +203,10 @@ a = []
 1. lambda function:
     +   `dist = lambda i: points[i][0]**2 + points[i][1]**2`   `dist(i)` represent dist of point[i] to (0, 0)
 2. random
-    +   `random.randint(1, n)`
+    +   `random.randint(1, n)` 
+    +   `random.randrange(stop)` `random.randrange(start, stop[, step])` Return a randomly selected element from range(start, stop, step). 
+    +   `random.random()` Return the next random floating point number in the range [0.0, 1.0)
+    
 3. `bisect.bisect(a, x, lo=0, hi=len(a))` returns an insertion point which comes after (to the right of)
      any existing entries of x in a.  `bisect.bisect_left(a, x, lo=0, hi=len(a)`the insertion point will be
      before (to the left of) any existing entries.
