@@ -32,6 +32,7 @@ the first element in ascending order, `a.sort(key=lambda x: x[0], reverse=True)`
 12. Iterate all elements paired with their indices, use `enumerate(a)`.
 13. Zip k lists: `zip(a, b, c...)`, where a, b, c are lists.
 14. `nums[:]` returns a copy of nums 
+15. `list1+list2` gives a new list that is the concatenation of list1 and list2.
 
 ## String
 
