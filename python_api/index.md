@@ -62,6 +62,7 @@ Let's define `a = set()` as a Set.
   + elements in a but not in b (diff): `a - b`
   + elements in both a and b (AND): `a ^ b`
   + elements in a or b or both (UNION): `a | b`
+7. `a.pop()` Remove a random item from the set a
 
 ## Dictionary
 
