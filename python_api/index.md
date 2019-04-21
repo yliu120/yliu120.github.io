@@ -48,6 +48,8 @@ a = "Test String"
 6. Concatenate. `a + a`
 7. Find/Replace. `a.find('est')`/`a.replace('est', 'new_est')`.
 8. String slices (substrings), same with list. `a[5:]` (this will evaluate to `'String'`).
+9. `s.strip()` 
+10. `char.isdigit()`
 
 ## Set
 
@@ -209,6 +211,7 @@ a = []
     +   `random.randrange(stop)` `random.randrange(start, stop[, step])` Return a randomly selected element from range(start, stop, step). 
     +   `random.random()` Return the next random floating point number in the range [0.0, 1.0).
     +   `random.choice(seq)` Return a random element from the non-empty sequence seq. If seq is empty, raises IndexError.
+    +   `random.shuffle(nums)`  
     
 3. `bisect.bisect(a, x, lo=0, hi=len(a))` returns an insertion point which comes after (to the right of)
      any existing entries of x in a.  `bisect.bisect_left(a, x, lo=0, hi=len(a)`the insertion point will be
