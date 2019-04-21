@@ -62,7 +62,8 @@ Let's define `a = set()` as a Set.
   + elements in a but not in b (diff): `a - b`
   + elements in both a and b (AND): `a ^ b`
   + elements in a or b or both (UNION): `a | b`
-7. `a.pop()` Remove a random item from the set a
+7. `a.pop()` Remove and return a random item from the set a
+8. To remove an item in a set, use the `remove()`, or the `discard()` method. `discard()` will not raise Error it the item doen't exist but `remove()` will. 
 
 ## Dictionary
 
