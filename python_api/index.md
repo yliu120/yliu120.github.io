@@ -228,3 +228,4 @@ a = []
     +    `Trie = lambda: collections.defaultdict(Trie)`
     +    `int(k, 16)` 
     +    ` def __hash__(self): return hash(self.content)`
+    +    `list.index(key)` `list.rindex(key)`
