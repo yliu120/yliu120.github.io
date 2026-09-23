@@ -1,6 +1,7 @@
 ---
 title: Agent-Centric Development Workflow
 layout: essay
+authors: Yunlong Liu, Gemini, Codex
 permalink: /agent-centric-development-workflow/
 ---
 
