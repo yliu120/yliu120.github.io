@@ -1,15 +1,8 @@
 ---
 title: Agent-Centric Development Workflow
+layout: essay
 permalink: /agent-centric-development-workflow/
 ---
-
-# Agent-Centric Development Workflow
-
-*"天下武功，唯快不破" — Speed and Agility in the Agentic Era*
-
-**Authors:** Yunlong Liu, Gemini
-
-**Date:** September 23, 2026
 
 ## Background & Context
 
